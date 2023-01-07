@@ -68,8 +68,8 @@ window.onload = ()=>{
     sizeChoice = 100;
     sizeOptions.value = 100;
     userInput.value = "";
-    BGColor.value = "#000000";
-    FGColor.value = "#ffffff";
+    BGColor.value = BGColorChoice = "#000000";
+    FGColor.value = FGColorChoice = "#ffffff";
     downloadBtn.classList.add("hide");
     submitBtn.disabled = true;
 };
