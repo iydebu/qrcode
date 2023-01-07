@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #3766ff;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#f3f3fb 50%, var(--primary-color) 50%);
+}
+.wrapper{
+    background-color: #ffffff;
+    padding: 5em 4em;
+    position: absolute;
+    width: 31.25em;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+}
+#userInput{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    outline: none;
+}
+.options{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+select{
+    appearance: none;
+    width: 8em;
+    padding: 0.45em 0.9em;
+    font-size: 1.25em;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    color: #ffffff;
+    background-image: url("arrow.png");
+    background-repeat: no-repeat;
+    background-size: 1.1rem;
+    background-position: 6em;
+    outline: none;
+    border-radius: 0.3em;
+}
+select::-ms-expand{
+    display: none;
+}
+select option{
+    background-color: #ffffff;
+    color: var(--primary-color);
+    letter-spacing: 0.06em;
+    font-weight: 400;
+}
+.selected{
+    display: none;
+}
+.color-inp{
+    appearance: none;
+    background-color: transparent;
+    width: 3.1em;
+    height: 3.1em;
+    outline: none;
+    border: none;
+}
+
+.color-inp::-webkit-color-swatch{
+    border-radius:0.3em;
+    border: 0.18em solid #191f3f;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box button,
+.box a{
+    font-size: 1em;
+    padding: 0.8em 2em;
+    border-radius: 0.5em;
+    margin-top: 2em;
+}
+.box button:disabled{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 0.18em solid var(--primary-color);
+}
+.box a{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border: 0.18em solid var(--primary-color);
+}
+.container{
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+.hide{
+    display: none;
+}
